@@ -1,128 +1,101 @@
 <div class="main">
-  <div class="mx-8">
+  <div>
     <!-- Navigation -->
-    <div id="navbar flex flex-row">
-      <li class="list-none flex flex-row justify-center">
-        <ul>
-          <img src="assets/ALLPRO.svg" alt="logo" class="h-36 border border-red-400"/>
-        </ul>
-        <ul>About</ul>
-        <ul>Services</ul>
-        <ul>Blog</ul>
-        <ul>Contact</ul>
-      </li>
-      <button>Appointment</button>
+    <div class="navbar flex flex-row justify-center items-center space-x-16 text-sm border border-blue-400">
+      <p>
+        <img src="assets/ALLPRO.svg" alt="logo" class="h-28 w-28 border border-red-400" />
+      </p>
+      <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">About</p>
+      <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">Services</p>
+      <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">Blog</p>
+      <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">Contact</p>
+      <button
+        class="py-3 px-9 bg-[#54be73] text-white hover:bg-white hover:text-[#54be73] border-2 border-[#54be73] font-bold">Appointment</button>
     </div>
     <div class="banner">
-      <!-- <img>
-
-      </img> -->
+      <div class="flex grow border border-yellow-500">
+        <img src="assets/chip.jpg" alt="Motherboard being fixed" class="h-custom-h w-full object-none" />
+      </div>
     </div>
-    <div class="quick-contact">
-      <div>
-        <p>CALL US 24/7</p>
-        <p>+123-854-9949</p>
+    <!-- Quick Contact -->
+    <div class="quick-contact flex flex-row border border-blue-950 space-x-64 justify-center py-20 mx-8">
+      <div class="flex flex-col text-center justify-between border border-red-600">
+        <p class="text-uppercase font-bold text-xl">CALL US 24/7</p>
+        <p class="font-thin text-4xl">+123-854-9949</p>
       </div>
-      <div>
-        <p>EMAIL ADDRESS</p>
-        <p>repair&#64;allpro.com</p>
+      <div class="flex flex-col text-center justify-between border border-red-600">
+        <p class="text-uppercase font-bold text-xl">EMAIL ADDRESS</p>
+        <p class="font-thin text-4xl">repair&#64;allpro.com</p>
       </div>
-      <div>
-        <p>OPEN HOURS</p>
-        <p>8:00am - 6:00pm</p>
+      <div class="flex flex-col text-center justify-between border border-red-600">
+        <p class="text-uppercase font-bold text-xl">OPEN HOURS</p>
+        <p class="font-thin text-4xl">8:00am - 6:00pm</p>
       </div>
     </div>
     <!-- About Us -->
-    <div class="about-us">
+    <div class="about-us mx-8">
       <app-about></app-about>
     </div>
+    <!-- Services -->
     <div class="services bg-black">
       <app-services></app-services>
     </div>
-    <div class="blog">
-      <div>
-        <h2>BLOG POSTS</h2>
-        <p>Read our recent blogs to always be updated with our news</p>
-      </div>
-      <div>
-        <div>
-          <!-- <img></img> -->
-          <p>A Note About Windows 11 Upgrades</p>
-          <p>You would find our team super-fast and active, who put work first, to deliver to you on time.</p>
-          <div>
-            <div>
-            <div>
-              <!-- <img></img> -->
-              <p>Admin</p>
-            </div>
-            <div>
-              <!-- <img></img> -->
-              <p>Date</p>
-            </div>
-            <div>
-              <!-- <img></img> -->
-              <p>View</p>
-            </div>
-            </div>
-            <div>
-            <div>
-              <!-- <img></img> -->
-              <p>Admin</p>
-            </div>
-            <div>
-              <!-- <img></img> -->
-              <p>Date</p>
-            </div>
-            <div>
-              <!-- <img></img> -->
-              <p>View</p>
-            </div>
-            </div>
-            <div>
-            <div>
-              <!-- <img></img> -->
-              <p>Admin</p>
-            </div>
-            <div>
-              <!-- <img></img> -->
-              <p>Date</p>
-            </div>
-            <div>
-              <!-- <img></img> -->
-              <p>View</p>
-            </div>
-            </div>
+    <!-- Comments -->
+    <div class="Comments">
+      <app-blog></app-blog>
+    </div>
+    <!-- Second Banner -->
+    <div class="banner-2 mx-8">
+      <div class="flex flex-row border border-purple-950">
+        <div class="flex border border-red-400 h-custom-h w-1/2">
+          <img src='/assets/solutions.jpg' alt='man fixing computer' class="object-cover" />
+        </div>
+        <div class="flex flex-col border border-blue-400 w-1/2 px-20 justify-center">
+          <h1 class="text-2xl font-thin">Like What You See?</h1>
+          <h1 class="mb-3 text-6xl font-bold">CHOOSE US</h1>
+          <p class="my-3 text-xl font-light">
+            Our 5 star services have left customers happy.
+          </p>
+          <p class="my-6 py-3 px-5 bg-[#54be73] text-white border-2 border-[#54be73] font-bold w-full">
+            Our dedicated team ensures that every project is completed with the highest level of professionalism and
+            expertise.
+          </p>
+          <p class="my-6 py-3 px-5 bg-[#54be73] text-white border-2 border-[#54be73] font-bold w-full">
+            We continuously innovate to provide cutting-edge solutions that meet the ever-evolving needs of our clients.
+          </p>
+          <p class="my-6 py-3 px-5 bg-[#54be73] text-white border-2 border-[#54be73] font-bold w-full">
+            Customer satisfaction is our top priority, and we strive to exceed expectations with every service we
+            deliver.
+          </p>
+          <p class="my-6 py-3 px-5 bg-[#54be73] text-white border-2 border-[#54be73] font-bold w-full">
+            Our comprehensive support and maintenance services guarantee that your systems run smoothly and efficiently.
+          </p>
         </div>
       </div>
     </div>
-    <div class="banner-2">
-      <div>
-        <!-- <img></img> -->
-      </div>
-      <div>
-        <h3>Like What you see?</h3>
-        <h1>CHOOSE US</h1>
-        <p>Our 5 star services have left customers happy.</p>
-      </div>
+    <!-- Appointment -->
+    <div class="appointment">
+
     </div>
-    <div class="appointment"></div>
-    <div class="contact">
-      <div>
-        <p>CALL US 24/7</p>
-        <p>+123-854-9949</p>
+    <!-- Contact -->
+    <div class="quick-contact flex flex-row border border-blue-950 space-x-64 justify-center py-20 mx-8">
+      <div class="flex flex-col text-center justify-between border border-red-600">
+        <p class="text-uppercase font-bold text-xl">CALL US 24/7</p>
+        <p class="font-thin text-4xl">+123-854-9949</p>
       </div>
-      <div>
-        <p>EMAIL ADDRESS</p>
-        <p>repair&#64;allpro.com</p>
+      <div class="flex flex-col text-center justify-between border border-red-600">
+        <p class="text-uppercase font-bold text-xl">EMAIL ADDRESS</p>
+        <p class="font-thin text-4xl">repair&#64;allpro.com</p>
       </div>
-      <div>
-        <p>OPEN HOURS</p>
-        <p>8:00am - 6:00pm</p>
+      <div class="flex flex-col text-center justify-between border border-red-600">
+        <p class="text-uppercase font-bold text-xl">OPEN HOURS</p>
+        <p class="font-thin text-4xl">8:00am - 6:00pm</p>
       </div>
     </div>
     <div class="footer">
       <div>
-        <p>The highly-trained technicians have many years of experience with all laptop, notebook and desktop computer repair.</p>
+        <p>The highly-trained technicians have many years of experience with all laptop, notebook and desktop computer
+          repair.</p>
         <div>
           <!-- <img></img> -->
           <p>Location</p>
@@ -140,7 +113,7 @@
         <h2>NEWSLETTER</h2>
         <p>Enter your email address here always to be updated. We promise not to spam!</p>
         <!-- Add input here -->
-         <button>Subscribe</button>
+        <button>Subscribe</button>
       </div>
     </div>
   </div>

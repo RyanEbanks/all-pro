@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        'custom-h': '700px'
+      }
+    },
   },
   plugins: [],
 }
