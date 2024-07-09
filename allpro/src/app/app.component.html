@@ -12,9 +12,14 @@
       <button
         class="py-3 px-9 bg-[#54be73] text-white hover:bg-white hover:text-[#54be73] border-2 border-[#54be73] font-bold">Appointment</button>
     </div>
-    <div class="banner">
+    <div class="banner relative">
       <div class="flex grow border border-yellow-500">
         <img src="assets/chip.jpg" alt="Motherboard being fixed" class="h-custom-h w-full object-none" />
+      </div>
+      <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center bg-black bg-opacity-50">
+        <p class="pl-20 text-white font-thin text-4xl">Any Computer Problems?</p>
+        <p class="pl-20 uppercase text-white font-bold text-6xl">We Will Help</p>
+        <button class="py-3 px-9 bg-[#54be73] text-white hover:bg-transparent border-2 border-[#54be73] font-bold w-1/6 mt-8 ml-20">Subscribe</button>
       </div>
     </div>
     <!-- Quick Contact -->
@@ -75,45 +80,44 @@
     </div>
     <!-- Appointment -->
     <div class="appointment">
-
+      <app-appointment></app-appointment>
     </div>
     <!-- Contact -->
-    <div class="quick-contact flex flex-row border border-blue-950 space-x-64 justify-center py-20 mx-8">
-      <div class="flex flex-col text-center justify-between border border-red-600">
-        <p class="text-uppercase font-bold text-xl">CALL US 24/7</p>
-        <p class="font-thin text-4xl">+123-854-9949</p>
-      </div>
-      <div class="flex flex-col text-center justify-between border border-red-600">
-        <p class="text-uppercase font-bold text-xl">EMAIL ADDRESS</p>
-        <p class="font-thin text-4xl">repair&#64;allpro.com</p>
-      </div>
-      <div class="flex flex-col text-center justify-between border border-red-600">
-        <p class="text-uppercase font-bold text-xl">OPEN HOURS</p>
-        <p class="font-thin text-4xl">8:00am - 6:00pm</p>
-      </div>
+    <div class="quick-contact">
+      <app-contact></app-contact>
     </div>
-    <div class="footer">
-      <div>
-        <p>The highly-trained technicians have many years of experience with all laptop, notebook and desktop computer
-          repair.</p>
-        <div>
-          <!-- <img></img> -->
-          <p>Location</p>
+    <!-- Footer -->
+    <div class="footer bg-black pt-10">
+      <p class="text-white font-thin text-center mb-5">
+        The highly-trained technicians have many years of experience with all laptop, notebook and desktop computer
+        repair.
+      </p>
+      <div class="flex flex-row justify-center space-x-8">
+        <div class="flex flex-col space-y-4">
+          <div class="flex flex-row border border-blue-200">
+            <img src="assets/location-dot-solid.svg" alt="location sign" class="h-6 w-6 mr-2">
+            <p class="text-white font-thin">Location</p>
+          </div>
+          <div class="flex flex-row border border-blue-200">
+            <img src="assets/phone-solid.svg" alt="phone icon" class="h-6 w-6 mr-2">
+            <p class="text-white font-thin">+123-854-9949</p>
+          </div>
+          <div class="flex flex-row border border-blue-200">
+            <img src="assets/envelope-solid.svg" alt="location sign" class="h-6 w-6 mr-2">
+            <p class="text-white font-thin">repair&#64;allpro.com</p>
+          </div>
         </div>
-        <div>
-          <!-- <img></img> -->
-          <p>+123-854-9949</p>
-        </div>
-        <div>
-          <!-- <img></img> -->
-          <p>repair&#64;allpro.com</p>
+        <div class="flex flex-col border border-red-300">
+          <h2 class="text-white text-center font-bold text-2xl mb-2">NEWSLETTER</h2>
+          <p class="text-white mb-2">Enter your email address here always to be updated. We promise not to spam!</p>
+          <input type="email" id="email" name="email" placeholder="Enter your email" class="shadow appearance-none border w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mx-auto mb-4">
+          <button
+            class="py-3 px-auto hover:bg-[#54be73] hover:text-white bg-transparent text-[#54be73] border-2 border-[#54be73] font-bold w-1/4 mx-auto">Subscribe</button>
         </div>
       </div>
-      <div>
-        <h2>NEWSLETTER</h2>
-        <p>Enter your email address here always to be updated. We promise not to spam!</p>
-        <!-- Add input here -->
-        <button>Subscribe</button>
+      <div class='flex flex-col px-8'>
+        <div class='border-b border-slate-200 py-4 mb-4'></div>
+        <p class='pb-5 text-white'>AllPro/ Made by Ryan Ebanks</p>
       </div>
     </div>
   </div>
