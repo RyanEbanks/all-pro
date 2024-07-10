@@ -1,10 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'allpro';
+export class AppComponent implements OnInit {
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.fragment.subscribe(fragment => {
+      if (fragment) {
+        this.scrollToElement(fragment);
+      }
+    });
+  }
+
+  private scrollToElement(id: string): void {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }

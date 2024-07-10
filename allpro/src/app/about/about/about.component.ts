@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-about',
   template: `
-  <div class="flex flex-row border border-purple-950">
-    <div class="flex border border-red-400 h-custom-h w-1/2">
+  <div class="flex flex-row my-10">
+    <div class="flex h-custom-h w-1/2">
       <img src='/assets/computer-repair-services.jpg' alt='man fixing computer' class="object-cover" />
     </div>
-    <div class="flex flex-col border border-blue-400 w-1/2 px-20 justify-center">
+    <div class="flex flex-col w-1/2 px-20 justify-center">
       <h1 class="text-2xl font-thin">Welcome!</h1>
       <h1 class="mb-3 text-6xl font-bold">ABOUT US</h1>
       <p class="my-3 text-xl font-light">
