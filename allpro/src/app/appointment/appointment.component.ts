@@ -4,7 +4,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'app-appointment',
   template: `
- <div class="flex flex-col bg-black items-center py-20">
+ <div class="flex flex-col bg-black items-center py-20 px-10 lg:px-0">
   <form [formGroup]="myForm" (ngSubmit)="submitForm()" class="w-full max-w-sm">
     <div class="mb-4">
       <label for="name" class="block text-white text-sm font-bold mb-2">Name:</label>

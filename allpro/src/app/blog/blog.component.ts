@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
         <h1 class="text-3xl font-bold text-center">John Sanders</h1>
         <p class="uppercase font-thin text-sm text-center">client</p>
         <img src="assets/quote-left-solid.svg" alt="quotation to the left" class="h-8 w-8 mx-auto"/>
-        <p class="font-thin text-center text-xl">Donald came out to my house. he was on time, pleasant to work with and got the job done. I would definitely hire AllPro again.</p>
+        <p class="font-thin text-center text-xl px-8 lg:px-0">Donald came out to my house. he was on time, pleasant to work with and got the job done. I would definitely hire AllPro again.</p>
       </div>
   `,
   styleUrl: './blog.component.css'

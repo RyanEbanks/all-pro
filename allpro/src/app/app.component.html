@@ -1,7 +1,7 @@
 <div class="main">
   <div>
     <!-- Navigation -->
-    <div class="navbar flex flex-row justify-center items-center space-x-16 text-sm border-b shadow-xl sticky z-50 top-0 bg-white">
+    <div class="navbar flex flex-row justify-center items-center space-x-4 lg:space-x-16 text-sm border-b shadow-xl sticky z-50 top-0 bg-white">
       <a routerLink="/">
         <img src="assets/ALLPRO.svg" alt="logo" class="h-28 w-28" />
       </a>
@@ -18,33 +18,33 @@
         <a routerLink="/contact">Contact</a>
       </p>
       <button
-        class="py-3 px-9 bg-[#54be73] text-white hover:bg-white hover:text-[#54be73] border-2 border-[#54be73] font-bold">
+        class="hidden lg:inline lg:py-3 lg:px-9 lg:bg-[#54be73] lg:text-white lg:hover:bg-white lg:hover:text-[#54be73] lg:border-2 lg:border-[#54be73] lg:font-bold">
         <a routerLink="/appointment">Appointment</a>
       </button>
     </div>
     <div class="banner relative">
       <div class="flex grow">
-        <img src="assets/chip.jpg" alt="Motherboard being fixed" class="h-custom-h w-full object-none" />
+        <img src="assets/chip.jpg" alt="Motherboard being fixed" class="lg:h-custom-h h-1/2 w-full object-none" />
       </div>
       <div class="absolute top-0 left-0 w-full h-full flex flex-col justify-center bg-black bg-opacity-50">
-        <p class="pl-20 text-white font-thin text-4xl">Any Computer Problems?</p>
-        <p class="pl-20 uppercase text-white font-bold text-6xl">We Will Help</p>
-        <button class="py-3 px-9 bg-[#54be73] text-white hover:bg-transparent border-2 border-[#54be73] font-bold w-1/6 mt-8 ml-20">Subscribe</button>
+        <p class="lg:pl-20 text-white font-thin text-2xl lg:text-4xl text-center lg:text-left">Any Computer Problems?</p>
+        <p class="lg:pl-20 uppercase text-white font-bold text-4xl lg:text-6xl text-center lg:text-left">We Will Help</p>
+        <button class="hidden lg:inline lg:py-3 lg:px-9 lg:bg-[#54be73] lg:text-white lg:hover:bg-transparent lg:border-2 lg:border-[#54be73] lg:font-bold lg:w-1/6 lg:mt-8 lg:ml-20">Subscribe</button>
       </div>
     </div>
     <!-- Quick Contact -->
-    <div class="quick-contact flex flex-row space-x-64 justify-center py-20 px-8 border-b border-[#818181] outline-0 border-opacity-50">
-      <div class="flex flex-col text-center justify-between">
-        <p class="text-uppercase font-bold text-xl">CALL US 24/7</p>
-        <p class="font-thin text-4xl">+123-854-9949</p>
+    <div class="quick-contact flex flex-col lg:flex-row lg:space-x-64 justify-center py-20 px-4 lg:px-8 border-b border-[#818181] outline-0 border-opacity-50">
+      <div class="flex flex-col text-center justify-between py-4 lg:py-0">
+        <p class="text-uppercase font-bold text-base lg:text-xl">CALL US 24/7</p>
+        <p class="font-thin text-2xl lg:text-4xl">+123-854-9949</p>
       </div>
-      <div class="flex flex-col text-center justify-between">
-        <p class="text-uppercase font-bold text-xl">EMAIL ADDRESS</p>
-        <p class="font-thin text-4xl">repair&#64;allpro.com</p>
+      <div class="flex flex-col text-center justify-between py-4 lg:py-0">
+        <p class="text-uppercase font-bold text-base lg:text-xl">EMAIL ADDRESS</p>
+        <p class="font-thin text-2xl lg:text-4xl">repair&#64;allpro.com</p>
       </div>
-      <div class="flex flex-col text-center justify-between">
-        <p class="text-uppercase font-bold text-xl">OPEN HOURS</p>
-        <p class="font-thin text-4xl">8:00am - 6:00pm</p>
+      <div class="flex flex-col text-center justify-between py-4 lg:py-0">
+        <p class="text-uppercase font-bold text-base lg:text-xl">OPEN HOURS</p>
+        <p class="font-thin text-2xl lg:text-4xl">8:00am - 6:00pm</p>
       </div>
     </div>
     <!-- About Us -->
@@ -61,14 +61,14 @@
     </div>
     <!-- Second Banner -->
     <div class="banner-2 mx-8 my-20">
-      <div class="flex flex-row">
-        <div class="flex h-custom-h w-1/2">
+      <div class="flex flex-col lg:flex-row">
+        <div class="flex lg:h-custom-h w-full lg:w-1/2">
           <img src='/assets/solutions.jpg' alt='man fixing computer' class="object-cover" />
         </div>
-        <div class="flex flex-col w-1/2 px-20 justify-center">
-          <h1 class="text-2xl font-thin">Like What You See?</h1>
-          <h1 class="mb-3 text-6xl font-bold">CHOOSE US</h1>
-          <p class="my-3 text-xl font-light">
+        <div class="flex flex-col w-full lg:w-1/2 px-10 lg:px-20 justify-center mt-4 lg:mt-0 border lg:border-0 border-[#818181] outline-0 border-opacity-50">
+          <h1 class="text-2xl font-thin text-center lg:text-left">Like What You See?</h1>
+          <h1 class="mb-3 text-6xl font-bold text-center lg:text-left">CHOOSE US</h1>
+          <p class="my-3 text-xl font-light text-center lg:text-left">
             Our 5 star services have left customers happy.
           </p>
           <p class="my-6 py-3 px-5 bg-[#54be73] text-white border-2 border-[#54be73] font-bold w-full">
@@ -98,12 +98,12 @@
     </div>
     <!-- Footer -->
     <div class="footer bg-black pt-10">
-      <p class="text-white font-thin text-center mb-10">
+      <p class="text-white font-thin text-center mb-10 mx-8 lg:mx-0">
         The highly-trained technicians have many years of experience with all laptop, notebook and desktop computer
         repair.
       </p>
-      <div class="flex flex-row justify-center space-x-8">
-        <div class="flex flex-col space-y-4">
+      <div class="flex flex-col lg:flex-row justify-center lg:space-x-8">
+        <div class="flex flex-col space-y-4 mx-auto lg:mx-0">
           <div class="flex flex-row">
             <img src="assets/location-dot-solid.svg" alt="location sign" class="h-6 w-6 mr-2">
             <p class="text-white font-thin">Location</p>
@@ -117,9 +117,9 @@
             <p class="text-white font-thin">repair&#64;allpro.com</p>
           </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col mt-4 lg:mt-0">
           <h2 class="text-white text-center font-bold text-2xl mb-2">NEWSLETTER</h2>
-          <p class="text-white mb-2">Enter your email address here always to be updated. We promise not to spam!</p>
+          <p class="text-white mb-2 mx-8 lg:mx-0 text-center lg:text-left">Enter your email address here always to be updated. We promise not to spam!</p>
           <input type="email" id="email" name="email" placeholder="Enter your email" class="shadow appearance-none border w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline mx-auto mb-4">
           <button
             class="py-3 px-auto hover:bg-[#54be73] hover:text-white bg-transparent text-[#54be73] border-2 border-[#54be73] font-bold w-1/4 mx-auto">Subscribe</button>
