@@ -58,6 +58,7 @@ export class AppointmentComponent implements OnInit {
     if (this.myForm.valid) {
       console.log("Form Has been submitted. This isn't actually going anywhere");
       console.log(this.myForm.value);
+      this.myForm.reset();
     }
   }
 }

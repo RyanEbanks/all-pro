@@ -1,28 +1,28 @@
-<div class="main">
+<div class="main scroll-smooth">
   <div>
     <!-- Navigation -->
     <div class="navbar flex flex-row justify-center items-center space-x-4 lg:space-x-16 text-sm border-b shadow-xl sticky z-50 top-0 bg-white">
-      <a routerLink="/">
+      <a href="#banner">
         <img src="assets/ALLPRO.svg" alt="logo" class="h-28 w-28" />
       </a>
-      <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">
-        <a routerLink="/about">About</a>
+      <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold my-10">
+        <a href="#about">About</a>
       </p>
       <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">
-        <a routerLink="/services">Services</a>
+        <a href="#services">Services</a>
       </p>
       <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">
-        <a routerLink="/blog">Blog</a>
+        <a href="#blog">Blog</a>
       </p>
       <p class="border-transparent border-b hover:text-[#54be73] py-1 font-bold">
-        <a routerLink="/contact">Contact</a>
+        <a href="#contact">Contact</a>
       </p>
       <button
         class="hidden lg:inline lg:py-3 lg:px-9 lg:bg-[#54be73] lg:text-white lg:hover:bg-white lg:hover:text-[#54be73] lg:border-2 lg:border-[#54be73] lg:font-bold">
-        <a routerLink="/appointment">Appointment</a>
+        <a href="#appointment">Appointment</a>
       </button>
     </div>
-    <div class="banner relative">
+    <div id="banner" class="relative scroll-mt-40 scroll-smooth">
       <div class="flex grow">
         <img src="assets/chip.jpg" alt="Motherboard being fixed" class="lg:h-custom-h h-1/2 w-full object-none" />
       </div>
@@ -33,7 +33,7 @@
       </div>
     </div>
     <!-- Quick Contact -->
-    <div class="quick-contact flex flex-col lg:flex-row lg:space-x-64 justify-center py-20 px-4 lg:px-8 border-b border-[#818181] outline-0 border-opacity-50">
+    <div id="contact" class="quick-contact flex flex-col lg:flex-row lg:space-x-64 justify-center py-20 px-4 lg:px-8 border-b border-[#818181] outline-0 border-opacity-50 scroll-mt-40">
       <div class="flex flex-col text-center justify-between py-4 lg:py-0">
         <p class="text-uppercase font-bold text-base lg:text-xl">CALL US 24/7</p>
         <p class="font-thin text-2xl lg:text-4xl">+123-854-9949</p>
@@ -48,15 +48,15 @@
       </div>
     </div>
     <!-- About Us -->
-    <div id="about" class="about-us mx-8">
+    <div id="about" class="about-us mx-8 scroll-mt-40 scroll-smooth">
       <app-about></app-about>
     </div>
     <!-- Services -->
-    <div class="services bg-black">
+    <div id="services" class="bg-black scroll-mt-40 scroll-smooth">
       <app-services></app-services>
     </div>
     <!-- Comments -->
-    <div class="Comments">
+    <div id="blog" class="Comments scroll-mt-40 scroll-smooth">
       <app-blog></app-blog>
     </div>
     <!-- Second Banner -->
@@ -89,7 +89,7 @@
       </div>
     </div>
     <!-- Appointment -->
-    <div class="appointment">
+    <div id="appointment" class="appointment scroll-mt-40 scroll-smooth">
       <app-appointment></app-appointment>
     </div>
     <!-- Contact -->
