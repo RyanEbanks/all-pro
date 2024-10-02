@@ -7,6 +7,9 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+
+  title = 'allpro';
+  
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
